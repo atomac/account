@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Create Account Details</title>
+	</head>
+	<body>
+	    <form action="../com.account.model/account" method="POST">
+		    <label for="fromAccountId">From Account Id</label>
+		    <input name="fromAccountId" />
+		    <br/>
+		    <label for="toAccountId">To Account Id</label>
+		    <input name="toAccountId" />
+		    <br/>
+		    <label for="amount">Amount</label>
+		    <input name="amount" />
+		    <br/>
+		    <label for="currencyCode">Currency Code</label>
+	    	<select name="currencode">
+			    <option value="euro">Euro</option>
+			    <option value="usd">USD</option>
+			    <option value="gbp">GBP</option>
+		    </select>
+		    <br/>		    
+		    <input type="submit" value="Submit" />
+	    </form>
+	</body>
+</html>
+
+		this.accountId = accountId;
+		this.userName = userName;
+		this.balance = balance;
+		this.currencyCode = currencyCode;
